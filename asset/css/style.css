@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+#banner {
+    background: linear-gradient(rgba(0,0,0,0.5),black),url("../image/banner.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+#banner .logo {
+    width: 140px;
+    position: absolute;
+}
+.banner-text {
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+.banner-text h1 {
+    font-size: 100px;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+.bannerbtn {
+    margin: 50px auto 0;
+}
+.bannerbtn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 0;
+    color: white;
+    border: 0.5px solid white;
+    position: relative;
+    z-index: 1;
+    transition: color .5s;
+}
+.bannerbtn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+.bannerbtn a:hover span{
+    width: 100%;
+}
+.bannerbtn a:hover{
+    color: black;
+}
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: black;
+    z-index: 2;
+    transition: .5s;
+}
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#menubtn{
+    width: 50px;
+    height: 50px;
+    background: black;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+#feature {
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: orange;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(orange,white);
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    left: 0;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.title-text h1 {
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+}
+.box1{
+    display: flex;
+    padding-bottom: 40px;
+}
+.box2{
+    display: flex;
+}
+.card {
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #000000 inset;
+    text-align: center;
+    justify-content: center;
+    color: #e8e8e8;
+    align-items: center;
+    color: black;
+    flex-basis: 20%;
+    margin: 0 50px;
+}
+.card:hover {
+    color: orange;
+    box-shadow: 2px 2px 15px orange inset;
+    border: 3px solid orange;
+}
+.card p {
+    font-size: 20px;
+    font-family: 'Poppins',cursive;
+    padding: 40px;
+    font-weight: bold;
+}
+#classes {
+    width: 100%;
+    padding: 40px 0;
+    background: #212121;
+}
+.title-text2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.title-text2 p{
+    margin: auto;
+    font-size: 40px;
+    color:#ff5a91;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text2 p::after {
+    content: '';
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(#ff5a91,#212121);
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: 8px;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.sub {
+    margin: auto;
+    width: 500px;
+    height: 290px;
+    border-radius: 4px;
+    background: #212121;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+}
+.sub p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #212121;
+    border: 1.5px solid #ff5a91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub p:hover {
+    flex: 4;
+}
+.sub p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #ff568e;
+    letter-spacing: .1em;
+}
+.sub p:hover span {
+    transform: rotate(0);
+}
+.card2 {
+    padding: 20px;
+    cursor: pointer;
+    color: black;
+    display: flex;
+} 
+.content {
+    text-align: center;
+    position: relative;
+    transition: all 2.25s;
+    background-color: #ff568e;
+    padding: 5em;
+    transform-style: preserve-3d;
+    margin: 10px;
+    flex-basis: 20%;
+}
+.content:hover  {
+    transform: rotateY(0.5turn);
+}
+.front,
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2em;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.title {
+    transform: translateZ(5rem);
+    font-size: 2rem;
+}
+.subtitle {
+    transform: translateZ(2rem);
+}
+.back {
+    transform: rotateY(0.5turn);
+    background-color: #eb2f6d;
+}
+.description {
+    transform: translateZ(3rem);  
+}
+.endtext p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff568e;
+} 
+#gallery {
+    width: 100%;
+    padding: 40px 0; 
+    height: 100vh;
+}
+.title-text3 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.title-text3 p{
+    margin: auto;
+    font-size: 40px;
+    color:#007fff ;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text3 p::after {
+    content: '';
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(#007fff,white);
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: 8px;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.gal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper {
+    width: 60%;
+    height: 520px;
+    border: 5px solid #007fff;
+    border-radius: 20px;
+}
+.swiper img {
+    width: 100%;
+    height: 520px;
+}
+#team {
+    width: 100%;
+    padding: 40px 0; 
+    background: #212121;
+    height: 100vh;
+}
+.title-text4 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.title-text4 p{
+    margin: auto;
+    font-size: 40px;
+    color:#007fff ;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text4 p::after {
+    content: '';
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(#007fff,#212121);
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: 8px;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.profile-card1{
+    display: flex;
+    padding: 50px 50px;
+}
+.card3{
+    position: relative;
+    width: 350px;
+    height: 120px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    flex-basis: 20%;
+}
+.card3:hover{
+    height: 280px;
+}
+.imgbox{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 100px;
+    background: black;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card3:hover .imgbox{
+    width: 140px;
+    height: 140px;
+}
+.card3 .content1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card3 .content1 .detalis {
+    padding: 45px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(65px);
+    padding-bottom: 40px;
+}
+.card3:hover .content1 .detalis {
+    transform: translateY(0px);
+}
+.card3 .content1 .detalis h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+}
+.card3 .content1 .detalis  h2 span{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.card3 .content1 .detalis data h3{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+}
+.profile-card2{
+    display: flex;
+    padding: 50px;
+}
