@@ -361,7 +361,7 @@ nav ul li a{
 }
 .profile-card1{
     display: flex;
-    padding:  50px;
+    padding: 30px;
 }
 .card3{
     position: relative;
@@ -439,5 +439,5 @@ nav ul li a{
 }
 .profile-card2{
     display: flex;
-    padding: 50px;
+    padding: 20px;
 }
