@@ -361,7 +361,7 @@ nav ul li a{
 }
 .profile-card1{
     display: flex;
-    padding: 50px 50px;
+    padding:  50px;
 }
 .card3{
     position: relative;
@@ -372,6 +372,7 @@ nav ul li a{
     box-shadow: 0 35px 80px rgba(0,0,0,0.15);
     transition: 0.5s;
     flex-basis: 20%;
+    margin: 20px;
 }
 .card3:hover{
     height: 280px;
